@@ -177,27 +177,48 @@
     </button>
 
     <!-- 1. WELCOME COVER -->
-    <section id="welcome-cover" class="fixed inset-0 z-50 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0A0F1C]/70 via-[#0A0F1C]/80 to-[#0A0F1C]"></div>
-        
-        <div class="absolute inset-4 border border-gold/20 rounded-xl md:hidden pointer-events-none">
-            <svg class="absolute top-0 left-0 w-12 h-12 text-gold/50 -translate-x-[1px] -translate-y-[1px]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 30 V 0 H 30" /></svg>
-            <svg class="absolute bottom-0 right-0 w-12 h-12 text-gold/50 translate-x-[1px] translate-y-[1px]" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M100 70 V 100 H 70" /></svg>
-        </div>
+    <section id="welcome-cover" class="fixed inset-0 z-50 bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1920&q=80');">
 
-       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center px-6 w-full max-w-md">
-            <p class="text-gold tracking-[0.2em] text-sm uppercase mb-6 animate-fade-in font-medium">The Wedding Of</p>
-            <h1 class="font-serif text-5xl md:text-7xl text-white mb-4 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">Rama <span class="text-gold font-light">&amp;</span> Sinta</h1>
-            <p class="text-slate-300 font-light tracking-widest mb-12">12 • 12 • 2026</p>
-            
-            <div class="mt-auto mb-16 md:mb-24">
-                <p class="text-sm text-slate-400 mb-4 font-light">Kepada Yth. Bapak/Ibu/Saudara/i</p>
-                <button id="open-invitation" class="group relative inline-flex items-center justify-center px-8 py-3 bg-gold text-[#0A0F1C] font-semibold tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:bg-white hover:text-gold hover:shadow-[0_0_25px_rgba(212,175,55,0.5)]">
-                    <span class="relative z-10 flex items-center gap-2"><i class="fa-regular fa-envelope-open"></i> Buka Undangan</span>
-                </button>
-            </div>
-        </div>
-    </section>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 w-full max-w-md mx-auto">
+
+    <p class="text-gold tracking-[0.25em] text-xs uppercase mb-4">
+      The Wedding Of
+    </p>
+
+    <!-- NAMA FIX RAPI -->
+    <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl text-white mb-3 leading-tight flex items-center justify-center gap-2">
+
+      <span>Rama</span>
+
+      <span class="text-gold text-2xl md:text-4xl relative -top-1">
+        &amp;
+      </span>
+
+      <span>Sinta</span>
+
+    </h1>
+
+    <p class="text-slate-300 text-sm tracking-[0.3em] mb-8">
+      12 • 12 • 2026
+    </p>
+
+    <p class="text-xs text-slate-400 mb-4">
+      Kepada Yth. Bapak/Ibu/Saudara/i
+    </p>
+
+    <button id="open-invitation"
+      class="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-black font-semibold text-sm rounded-full shadow-lg hover:scale-105 transition">
+      <i class="fa-regular fa-envelope-open"></i>
+      Buka Undangan
+    </button>
+
+  </div>
+
+</section>
 
     <!-- MAIN CONTENT WRAPPER -->
     <div id="main-content" class="opacity-0 transition-opacity duration-1000 bg-base">
