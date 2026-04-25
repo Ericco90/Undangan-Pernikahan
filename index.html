@@ -177,24 +177,25 @@
     </button>
 
     <!-- 1. WELCOME COVER -->
-    <section id="welcome-cover" class="fixed inset-0 z-50 bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1920&q=80');">
+  <section id="welcome-cover" class="fixed inset-0 z-50 bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1920&q=80');">
 
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/70"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90"></div>
 
   <!-- Content -->
-  <div class="relative z-10 text-center px-6 w-full max-w-md mx-auto">
+  <div class="relative z-10 text-center px-6 w-full max-w-xl mx-auto">
 
-    <p class="text-gold tracking-[0.25em] text-xs uppercase mb-4">
+    <!-- Title kecil -->
+    <p class="text-gold tracking-[0.35em] text-sm uppercase mb-6">
       The Wedding Of
     </p>
 
-    <!-- NAMA FIX RAPI -->
-    <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl text-white mb-3 leading-tight flex items-center justify-center gap-2">
+    <!-- Nama BESAR -->
+    <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl text-white mb-4 leading-tight flex items-center justify-center gap-3">
 
       <span>Rama</span>
 
-      <span class="text-gold text-2xl md:text-4xl relative -top-1">
+      <span class="text-gold text-3xl md:text-5xl relative -top-1">
         &amp;
       </span>
 
@@ -202,16 +203,19 @@
 
     </h1>
 
-    <p class="text-slate-300 text-sm tracking-[0.3em] mb-8">
+    <!-- Tanggal -->
+    <p class="text-slate-200 text-base tracking-[0.4em] mb-10">
       12 • 12 • 2026
     </p>
 
-    <p class="text-xs text-slate-400 mb-4">
+    <!-- Kepada -->
+    <p class="text-sm text-slate-300 mb-5">
       Kepada Yth. Bapak/Ibu/Saudara/i
     </p>
 
+    <!-- Button -->
     <button id="open-invitation"
-      class="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-black font-semibold text-sm rounded-full shadow-lg hover:scale-105 transition">
+      class="inline-flex items-center gap-2 px-7 py-3 bg-gold text-black font-semibold text-base rounded-full shadow-[0_5px_20px_rgba(212,175,55,0.4)] hover:scale-105 transition">
       <i class="fa-regular fa-envelope-open"></i>
       Buka Undangan
     </button>
